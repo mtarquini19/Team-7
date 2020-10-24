@@ -5,6 +5,5 @@ $(document).ready(function() {
         console.log(data.hdurl);
         $('#img').append('<img src="' + data.hdurl + '">');
         console.log(data.hdurl);
-
     });
 });
