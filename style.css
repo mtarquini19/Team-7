@@ -2,6 +2,14 @@ body {
     /* overflow: hidden; */
 }
 
+.indexC {
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+}
+
 #search {
     padding-left: 1em;
     font-size: large;
