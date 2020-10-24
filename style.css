@@ -1,20 +1,50 @@
 body {
-    background: url(assets/NASAimage.jpg) no-repeat center center fixed;
-    background-size: cover;
+	background: url(assets/NASAimage.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .container {
-    text-align: center;
-    align-items: center;
-    padding: 300px 150px;
+	text-align: center;
+	align-items: center;
+	padding: 300px 150px;
 }
 
 #search {
-    padding-left: 1em;
-    font-size: large;
+	font-size: large;
 }
 
-.input-field {
-    position: relative !important;
-    width: 88% !important;
+/* .input-field {
+	position: relative !important;
+	width: 60% !important;
+} */
+
+/* .btn {
+    position: relative !important ;
+}   */
+
+.resultsContainer {
+	background-color: rgba(0, 0, 0, 0.319) !important;
+	margin: 60px;
+	padding: 0px;
+}
+
+.row {
+	background-color: rgba(0, 0, 0, 0.319) !important;
+	align-items: center;
+	text-align: center;
+}
+
+#nav-search {
+	background-color: #26a69a !important;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
+nav .brand-logo {
+    margin-left: 20px;
+}
+
+.dropdown-trigger {
+    background-color: ;
 }
