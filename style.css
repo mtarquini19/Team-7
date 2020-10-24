@@ -29,6 +29,10 @@
         background: black;
         opacity: .9;
     }
+    
+    nav {
+        background-color: black !important;
+    }
     /* .input-field {
 position: relative !important;
 width: 60% !important;
