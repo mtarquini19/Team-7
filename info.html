@@ -28,12 +28,12 @@
                         class="material-icons right">arrow_drop_down</i></a>
                 <!-- Dropdown Structure -->
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">Michael Tarquini</a></li>
-                    <li><a href="#!">Alex Fernandes</a></li>
-                    <li><a href="#!">Juan Pena</a></li>
-                    <li><a href="#!">Fernando Nunez</a></li>
-                    <li><a href="#!">Erik Ulerio</a></li>
-                    <li><a href="#!">MD Islam</a></li>
+                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
                 </ul>
                 <form>
                     <div class="input-field">
@@ -45,9 +45,14 @@
             </div>
         </nav>
     </header>
-<div class="back">
-    <button class="btn btn-large"><i class="material-icons left">arrow_back</i> Back to Results</button>
-</div>
+
+    <div class="under">
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
+                class="material-icons">home</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="results.html"><i
+                class="material-icons">arrow_back</i></a>
+    </div>
+
     <!-- header with navbar & search field -->
     <!-- buttons for back & main page -->
     <!-- small link to team members -->
@@ -58,7 +63,7 @@
         $(".dropdown-trigger").dropdown({
             hover: true
         });
-        $(document).ready(function() {
+        $(document).ready(function () {
             // create mobile menu
 
             $('.sidenav').sidenav();
@@ -66,7 +71,7 @@
             // create dropdown
 
             // add click event on search icon
-            $('.search-icon').on('click', function() {
+            $('.search-icon').on('click', function () {
                 // close mobile side menu
                 $('.sidenav').sidenav('close');
 
@@ -77,7 +82,7 @@
             });
 
             // add click event on searchbar close icon
-            $('#nav-search .close').on('click', function() {
+            $('#nav-search .close').on('click', function () {
                 // hide search nav bar
                 $('#nav-search').hide();
             });

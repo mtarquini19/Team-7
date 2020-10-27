@@ -11,7 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -23,20 +22,19 @@
     <!-- header with navbar & search field for new search -->
     <header>
 
-
         <nav>
             <div class="nav-wrapper teal lighten-1">
                 <!-- Dropdown Trigger -->
                 <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Meet Team 7<i
-                    class="material-icons right">arrow_drop_down</i></a>
+                        class="material-icons right">arrow_drop_down</i></a>
                 <!-- Dropdown Structure -->
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">Michael Tarquini</a></li>
-                    <li><a href="#!">Alex Fernandes</a></li>
-                    <li><a href="#!">Juan Pena</a></li>
-                    <li><a href="#!">Fernando Nunez</a></li>
-                    <li><a href="#!">Erik Ulerio</a></li>
-                    <li><a href="#!">MD Islam</a></li>
+                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
                 </ul>
                 <form>
                     <div class="input-field">
@@ -49,6 +47,11 @@
         </nav>
     </header>
 
+    <div class="home">
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
+                class="material-icons">home</i></a>
+    </div>
+
 
     <!-- back to search button & back to main page button -->
     <!-- small link to team members -->
@@ -58,21 +61,29 @@
 
     <div class="container">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="1" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="1"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="3"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="4"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="5"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="2" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="6"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="3" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="7"
+            class="materialbox responsive-img ">
 
-        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="4" class="materialbox responsive-img ">
+        <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="8"
+            class="materialbox responsive-img ">
 
     </div>
 
@@ -80,7 +91,7 @@
         $(".dropdown-trigger").dropdown({
             hover: true
         });
-        $(document).ready(function() {
+        $(document).ready(function () {
             // create mobile menu
 
             $('.sidenav').sidenav();
@@ -88,7 +99,7 @@
             // create dropdown
 
             // add click event on search icon
-            $('.search-icon').on('click', function() {
+            $('.search-icon').on('click', function () {
                 // close mobile side menu
                 $('.sidenav').sidenav('close');
 
@@ -99,7 +110,7 @@
             });
 
             // add click event on searchbar close icon
-            $('#nav-search .close').on('click', function() {
+            $('#nav-search .close').on('click', function () {
                 // hide search nav bar
                 $('#nav-search').hide();
             });
