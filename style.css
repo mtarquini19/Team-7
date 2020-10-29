@@ -1,6 +1,6 @@
-body {
-    /* overflow: hidden; */
-}
+/* body {
+    overflow: hidden;
+} */
 
 .indexC {
     margin: auto;
@@ -17,7 +17,7 @@ body {
 
 .input-field {
     position: relative !important;
-    width: 85% !important;
+    width: 50% !important;
 }
 
 #img {
@@ -42,7 +42,6 @@ nav {
     background-color: black !important;
     height: auto;
 }
-
 
 /* .input-field {
 position: relative !important;
@@ -71,7 +70,6 @@ nav .brand-logo {
     flex-wrap: wrap;
     justify-content: left;
 }
-
 
 /* .dropdown-trigger {} */
 

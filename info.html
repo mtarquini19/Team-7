@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NASA Results Info</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <nav>
+            <div class="nav-wrapper teal lighten-1">
+                <!-- Dropdown Trigger -->
+                <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Meet Team 7<i
+                        class="material-icons right">arrow_drop_down</i></a>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                </ul>
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search for a new photo...">
+                        <label class="label-icon" for="search"></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="under">
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
+                class="material-icons">home</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="results.html"><i
+                class="material-icons">arrow_back</i></a>
+    </div>
+
     <!-- header with navbar & search field -->
     <!-- buttons for back & main page -->
     <!-- small link to team members -->
     <!-- image and image information will display -->
     <!-- display buttons to share to social media & email -->
 
+    <script>
+        $(".dropdown-trigger").dropdown({
+            hover: true
+        });
+        $(document).ready(function () {
+            // create mobile menu
+
+            $('.sidenav').sidenav();
+
+            // create dropdown
+
+            // add click event on search icon
+            $('.search-icon').on('click', function () {
+                // close mobile side menu
+                $('.sidenav').sidenav('close');
+
+                // show search nav bar
+                $('#nav-search').show();
+                // focus on the input
+                $('#search').focus();
+            });
+
+            // add click event on searchbar close icon
+            $('#nav-search .close').on('click', function () {
+                // hide search nav bar
+                $('#nav-search').hide();
+            });
+        });
+    </script>
+
 </body>
+
 </html>
