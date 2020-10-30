@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -21,43 +23,168 @@
 <body>
 
     <header>
-        <nav>
-            <div class="nav-wrapper teal lighten-1">
-                <!-- Dropdown Trigger -->
-                <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Meet Team 7<i
-                        class="material-icons right">arrow_drop_down</i></a>
-                <!-- Dropdown Structure -->
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
-                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
-                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
-                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
-                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
-                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
-                </ul>
-                <form>
-                    <div class="input-field">
-                        <input id="search" type="search" required placeholder="Search for a new photo...">
-                        <label class="label-icon" for="search"></label>
-                        <i class="material-icons">close</i>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper teal lighten-1">
+                    <!-- Dropdown Trigger -->
+                    <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Check out our
+                        Github
+                        accounts!<i class="material-icons right">arrow_drop_down</i></a>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                        <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                        <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                        <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                        <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                        <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                    </ul>
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required placeholder="Search for a new photo...">
+                            <label class="label-icon" for="search"></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                    <div class="under">
+                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
+                                class="material-icons">home</i></a>
                     </div>
-                </form>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <div class="under">
-        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
-                class="material-icons">home</i></a>
-        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="results.html"><i
-                class="material-icons">arrow_back</i></a>
-    </div>
+
 
     <!-- header with navbar & search field -->
     <!-- buttons for back & main page -->
     <!-- small link to team members -->
     <!-- image and image information will display -->
     <!-- display buttons to share to social media & email -->
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Juan Pena</h3>
+                    <img src="assets/juanimg.png" alt="juanimg">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Michael Tarquini <a href="https://www.linkedin.com/in/michael-tarquini-72785b1ba/"
+                            class="fa fa-linkedin"></a></h3>
+                    <img src="assets/mikeimg.png" alt="mikeimg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Erik Ulerio</h3>
+                    <img src="assets/erikimg.png" alt="erikimg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Alex Fernandes</h3>
+                    <img src="assets/aleximg.png" alt="aleximg">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Fernando Nunez</h3>
+                    <img src="assets/fernandoimg.png" alt="fernandoimg">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>MD Islam</h3>
+                    <img src="assets/islamimg.png" alt="islamimg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin-top: 75px;
+            margin-bottom: 100px;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        /* Style all font awesome icons */
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
     <script>
         $(".dropdown-trigger").dropdown({
