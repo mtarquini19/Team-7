@@ -21,41 +21,54 @@
 </head>
 
 <body>
-
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper teal lighten-1">
-                    <!-- Dropdown Trigger -->
-                    <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Check out our
-                        Github
-                        accounts!<i class="material-icons right">arrow_drop_down</i></a>
-                    <!-- Dropdown Structure -->
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
-                        <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
-                        <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
-                        <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
-                        <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
-                        <li><a href="https://github.com/Islam4049">MD Islam</a></li>
-                    </ul>
-                    <form>
-                        <div class="input-field">
-                            <input id="search" type="search" required placeholder="Search for a new photo...">
-                            <label class="label-icon" for="search"></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                    <div class="under">
-                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
-                                class="material-icons">home</i></a>
+        <nav>
+            <div class="nav-wrapper navbar-fixed teal lighten-1">
+                <a class="btn-floating btn-large brand-logo hide-on-med-and-down" href="index.html"><i
+                        class="material-icons">home</i></a>
+                <a class="brand-logo hide-on-med-and-up" href="index.html">NASA images</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form class="left hide-on-med-and-down" style="margin-left: 100px; width: 50%">
+                    <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search for more photo">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
                     </div>
+                </form>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                </ul>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger " href="#" data-target="dropdown1">CHECK OUT OUR GITHUB ACCOUNTS!<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li></li>
+                </li>
+                <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                <div class="input-field">
+                    <input id="search" type="search" required placeholder="Search for more photo">
+                    <label class="label-icon" for="search"><i
+                            class="material-icons hide-on-med-and-down ">search</i></label>
+                    <i class="material-icons">close</i>
                 </div>
-            </nav>
-        </div>
+            </ul>
+        </nav>
     </header>
-
-
 
     <!-- header with navbar & search field -->
     <!-- buttons for back & main page -->
@@ -111,6 +124,8 @@
             </div>
         </div>
     </div>
+
+    <script src="core.js"></script>
 
     <style>
         * {

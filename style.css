@@ -1,86 +1,68 @@
-/* body {
-    overflow: hidden;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
-.indexC {
-	margin: auto;
-	position: absolute;
-	top: 35%;
-	left: 20%;
-	text-align: center;
-}
-
-#search {
-	padding-left: 1em;
-	font-size: large;
-	position: relative;
-	left: 80px;
-	top: -65px;
-	z-index: 4;
+body { 
+	background: radial-gradient(circle, rgba(224,224,224,0.5326505602240896) 0%, rgba(70,135,252,0.5494572829131652) 100%);
 }
 
 .input-field {
 	position: relative !important;
-	width: 50% !important;
 }
 
-#img {
+#show_bg_2 {
 	width: 100%;
-	height: 100vh;
-	position: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
+	height: 1000px;
 	background-size: cover;
-}
-
-.opacity {
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	background: black;
-	opacity: 0.9;
-}
-
-nav {
-	width: 100%;
-	background-color: black !important;
-	height: auto;
-}
-
-/* .input-field {
-position: relative !important;
-width: 60% !important;
-} */
-
-/* .btn {
-position: relative !important ;
-}   */
-
-#nav-search {
-	background-color: #26a69a !important;
-	position: fixed;
-	width: 100%;
-	z-index: 2;
+	background-position: center;
+	color: white;
 }
 
 nav .brand-logo {
 	margin-left: 20px;
+	margin-right: 20px;
+	font-family: "Orbitron", sans-serif;
 }
 
-.container {
+@media only screen and (max-width: 500px) {
+	.brand-logo {
+		font-size: 25px!important;
+		font-family: "Orbitron", sans-serif;
+		margin-left: 10px!important;
+	}
+}
+
+#result-container {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-/* .dropdown-trigger {} */
-
-.responsive-img {
-	width: 20%;
-	margin: 5%;
-}
-
 .container-img {
 	margin: 2px;
 }
+
+.container.home__search {
+	margin-top: 30vh;
+}
+
+h6 {
+	color: #5b5b5b;
+	align-items: center;
+}
+
+h2 {
+	font-family: "Orbitron", sans-serif;
+	color: #242424;
+}
+
+p {
+	color: #5b5b5b;
+	align-items: center;
+}
+
+a {
+	size: 10px;
+}
+
+

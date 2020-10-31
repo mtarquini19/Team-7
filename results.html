@@ -11,35 +11,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="results.js"></script>
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>NASA Results</title>
+    <title>NASA images</title>
 </head>
 
 <body>
-
-    <!-- header with navbar & search field for new search -->
     <header>
         <nav>
-            <div class="nav-wrapper teal lighten-1">
-                <button class="btn btn-large right"><a href="info.html">Meet Team 7</a></button>
-                <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
-                    class="material-icons">home</i></a>
-                <form>
+            <div class="nav-wrapper navbar-fixed teal lighten-1">
+                <a class="btn-floating btn-large brand-logo hide-on-med-and-down" href="index.html"><i
+                        class="material-icons">home</i></a>
+
+                <a class="brand-logo hide-on-med-and-up" href="index.html">Title here</a>
+
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                <form class="left hide-on-med-and-down" style="margin-left: 100px; width: 80%">
                     <div class="input-field">
-                        <input id="search" type="search" required placeholder="Search for a new photo...">
-                        <label class="label-icon" for="search"></label>
+                        <input id="search" type="search" required placeholder="Search for more photo">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                         <i class="material-icons">close</i>
                     </div>
                 </form>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="info.html">Meet Team 7</a></li>
+                </ul>
             </div>
+            <!-- Mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="info.html">Meet Team 7</a></li>
+                <div class="input-field">
+                    <input id="search" type="search" required placeholder="Search for more photo">
+                    <label class="label-icon" for="search"><i
+                            class="material-icons hide-on-med-and-down ">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </ul>
         </nav>
     </header>
-
-        
-
 
     <!-- back to search button & back to main page button -->
     <!-- small link to team members -->
@@ -47,40 +57,9 @@
     <!-- hover effect for each image/ video showing image information -->
     <!-- user ability to share photos via social media & email -->
 
-    <div class="container">
+    <div id="result-container" class="container"></div> 
 
-    </div>
-
-    <script>
-        $(".dropdown-trigger").dropdown({
-            hover: true
-        });
-        $(document).ready(function () {
-            // create mobile menu
-
-            $('.sidenav').sidenav();
-
-            // create dropdown
-
-            // add click event on search icon
-            $('.search-icon').on('click', function () {
-                // close mobile side menu
-                $('.sidenav').sidenav('close');
-
-                // show search nav bar
-                $('#nav-search').show();
-                // focus on the input
-                $('#search').focus();
-            });
-
-            // add click event on searchbar close icon
-            $('#nav-search .close').on('click', function () {
-                // hide search nav bar
-                $('#nav-search').hide();
-            });
-        });
-    </script>
-
+    <script src="core.js"></script>
 </body>
 
 </html>
