@@ -62,23 +62,40 @@ body {
 /* Style all font awesome icons */
 
 .fa {
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
-    padding-top: 10%;
+    padding-top: 12%;
+    margin: 2px;
 }
 
 
 /* Add a hover effect if you want */
 
+
+.socialIcons{
+    display: flex;
+}
+
+
 .fa-linkedin:before {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
+
+.fa-github:before {
+    font-size: 20px;
+}
+
+.fa-github{
+    background: #000000;
+    color: white;
+}
+
 
 .fa-linkedin {
     background: #007BB5;
@@ -94,8 +111,8 @@ body {
 .img-size img {
     background-repeat: no-repeat;
     background-origin: content-box;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .info-flex {
@@ -103,3 +120,7 @@ body {
     flex-flow: row;
     flex-wrap: wrap;
 }
+
+
+
+
