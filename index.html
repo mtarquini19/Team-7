@@ -12,46 +12,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="pod.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>NASA Search</title>
+    <title>NASA images</title>
 </head>
 
 <body>
-
-    <!-- add search field and button -->
-    <!-- Astronomy WOTD display in background -->
-    <!-- small link to team members in upper right corner -->
-
-    <header>
-        <nav>
-            <div class="nav-wrapper teal lighten-1">
-                <button class="btn btn-large right"><a href="info.html">Meet Team 7</a></button>
-            </div>
-        </nav>
-    </header>
-
-    <div class="background">
-        <div id="img"></div>
-        <div class="opacity"></div>
+    <div id='show_bg_2'>
+        <header>
+            <nav>
+                <div class="nav-wrapper navbar-fixed teal lighten-1">
+                    <a href="#index.html" class="brand-logo">NASA images</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="info.html">MEET THE TEAM 7</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile -->
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="info.html">MEET THE TEAM 7</a></li>
+                    <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search for more photo">
+                        <label class="label-icon" for="search"><i
+                                class="material-icons hide-on-med-and-down ">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="container home__search">
+            <h2>The universe is yours to explore.</h2>
+            <br>
+            <form action="results.html" method="get" class="input-field">
+                <input type="text" name="search" id="search" placeholder="Search for a photo...">
+                <input type="submit" class="btn btn-large" value="Search" />
+            </form>
+            <div id="img" class="responsive-img"></div>
+        </div>
     </div>
 
-    <div class="container indexC">
-        <form action="results.html" method="get" class="input-field">
-            <input type="text" name="search" id="search" placeholder="Search for a photo..."><button type="submit" class="btn btn-large"><i
-                        class="material-icons left">search</i> Search</button>
-        </form>
-    </div>
-
-
-    <script>
-        $(".dropdown-trigger").dropdown({
-            hover: true
-        });
-    </script>
-
+    <script src="pod.js"></script>
+    <script src="core.js"></script>
 </body>
 
 </html>

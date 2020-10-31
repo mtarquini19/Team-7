@@ -21,48 +21,54 @@
 </head>
 
 <body>
-
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper teal lighten-1">
-                    <!-- Dropdown Trigger -->
-                    <a class="dropdown-trigger btn btn-large right" href="#" data-target="dropdown1">Check out our
-                        Github
-                        accounts!<i class="material-icons right">arrow_drop_down</i></a>
-                    <!-- Dropdown Structure -->
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
-                        <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
-                        <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
-                        <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
-                        <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
-                        <li><a href="https://github.com/Islam4049">MD Islam</a></li>
-                    </ul>
-                    <form>
-                        <div class="input-field">
-                            <input id="search" type="search" required placeholder="Search for a new photo...">
-                            <label class="label-icon" for="search"></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                    <div class="under">
-                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-1" href="index.html"><i
-                                class="material-icons">home</i></a>
+        <nav>
+            <div class="nav-wrapper navbar-fixed teal lighten-1">
+                <a class="btn-floating btn-large brand-logo hide-on-med-and-down" href="index.html"><i
+                        class="material-icons">home</i></a>
+                <a class="brand-logo hide-on-med-and-up" href="index.html">NASA images</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form class="left hide-on-med-and-down" style="margin-left: 100px; width: 50%">
+                    <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search for more photo">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
                     </div>
+                </form>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                    <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                    <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                    <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                    <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                    <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                </ul>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger " href="#" data-target="dropdown1">CHECK OUT OUR GITHUB ACCOUNTS!<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li></li>
+                </li>
+                <li><a href="https://github.com/mtarquini19">Michael Tarquini</a></li>
+                <li><a href="https://github.com/aafernands">Alex Fernandes</a></li>
+                <li><a href="https://github.com/juanpenadev">Juan Pena</a></li>
+                <li><a href="https://github.com/FernandoNunez-Dev">Fernando Nunez</a></li>
+                <li><a href="https://github.com/Erikulerio">Erik Ulerio</a></li>
+                <li><a href="https://github.com/Islam4049">MD Islam</a></li>
+                <div class="input-field">
+                    <input id="search" type="search" required placeholder="Search for more photo">
+                    <label class="label-icon" for="search"><i
+                            class="material-icons hide-on-med-and-down ">search</i></label>
+                    <i class="material-icons">close</i>
                 </div>
-            </nav>
-        </div>
+            </ul>
+        </nav>
     </header>
-
-
-
-    <!-- header with navbar & search field -->
-    <!-- buttons for back & main page -->
-    <!-- small link to team members -->
-    <!-- image and image information will display -->
-    <!-- display buttons to share to social media & email -->
-
     <div class="container">
         <div class="row">
             <div class="column">
@@ -111,135 +117,111 @@
         </div>
     </div>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <script src="core.js"></script>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
 
-        .container {
-            margin-top: 75px;
-            margin-bottom: 100px;
-        }
+<style>
 
-        /* Float four columns side by side */
-        .column {
-            float: left;
-            width: 33.3%;
-            padding: 0 10px;
-        }
+/* CARDS INFO PAGE */
 
-        /* Remove extra left and right margins, due to padding */
-        .row {
-            margin: 0 -5px;
-        }
+* {
+	box-sizing: border-box;
+}
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 
-        /* Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
+.container {
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
 
-        /* Style the counter cards */
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            text-align: center;
-            background-color: #f1f1f1;
-        }
+/* Float four columns side by side */
+.column {
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+}
 
-        /* Style all font awesome icons */
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 50px;
-            text-align: center;
-            text-decoration: none;
-        }
+/* Remove extra left and right margins, due to padding */
+.row {
+	margin: 0 -5px;
+}
 
-        /* Add a hover effect if you want */
-        .fa:hover {
-            opacity: 0.7;
-        }
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
 
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-        }
+/* Style the counter cards */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+}
 
-        .fa-instagram {
-            background: #125688;
-            color: white;
-        }
+/* Style all font awesome icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
 
-        .fa-youtube {
-            background: #bb0000;
-            color: white;
-        }
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+}
 
-        .fa-pinterest {
-            background: #cb2027;
-            color: white;
-        }
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
 
-        .fa-google {
-            background: #dd4b39;
-            color: white;
-        }
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
 
-    <script>
-        $(".dropdown-trigger").dropdown({
-            hover: true
-        });
-        $(document).ready(function () {
-            // create mobile menu
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
 
-            $('.sidenav').sidenav();
+.fa-pinterest {
+	background: #cb2027;
+	color: white;
+}
 
-            // create dropdown
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
 
-            // add click event on search icon
-            $('.search-icon').on('click', function () {
-                // close mobile side menu
-                $('.sidenav').sidenav('close');
-
-                // show search nav bar
-                $('#nav-search').show();
-                // focus on the input
-                $('#search').focus();
-            });
-
-            // add click event on searchbar close icon
-            $('#nav-search .close').on('click', function () {
-                // hide search nav bar
-                $('#nav-search').hide();
-            });
-        });
-    </script>
+img {
+	width: 100%;
+	height: 100%;
+}
+</style>
 
 </body>
 
