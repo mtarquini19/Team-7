@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     let pageURL = $(location).attr("href");
     let queryString = window.location.search;
     console.log(queryString);
