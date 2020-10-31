@@ -1,65 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 body {
-    background: radial-gradient(circle, rgba(224, 224, 224, 0.5326505602240896) 0%, rgba(70, 135, 252, 0.5494572829131652) 100%);
+	background: radial-gradient(
+		circle,
+		rgba(224, 224, 224, 0.5326505602240896) 0%,
+		rgba(70, 135, 252, 0.5494572829131652) 100%
+	);
 }
 
 .input-field {
     position: relative !important;
+    
 }
 
 #show_bg_2 {
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
-    background-position: center;
-    color: white;
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
 }
 
 nav .brand-logo {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: "Orbitron", sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: "Orbitron", sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
-    .brand-logo {
-        font-size:17px!important;
-        font-family: "Orbitron", sans-serif;
-        margin-left: 10px!important;
-    }
+	.brand-logo {
+		font-size: 17px !important;
+		font-family: "Orbitron", sans-serif;
+		margin-left: 10px !important;
+	}
 }
 
 #result-container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .container-img {
-    margin: 2px;
+	margin: 2px;
 }
 
 .container.home__search {
-    margin-top: 30vh;
+	margin-top: 30vh;
 }
 
 h6 {
-    color: #5b5b5b;
-    align-items: center;
+	color: #5b5b5b;
+	align-items: center;
 }
 
 h2 {
-    font-family: "Orbitron", sans-serif;
-    color: #b6b6b6;
+	font-family: "Orbitron", sans-serif;
+	color: #b6b6b6;
 }
 
 p {
-    color: #5b5b5b;
-    align-items: center;
+	color: #5b5b5b;
+	align-items: center;
 }
 
 a {
-    size: 10px;
+	size: 10px;
+}
+
+#search{
+    background-color: #eeeeee41;
+padding-left: 20px;
+color: #eee;
+    
 }
