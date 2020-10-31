@@ -1,11 +1,11 @@
 $(document).ready(function() {
+
     let pageURL = $(location).attr("href");
     let queryString = window.location.search;
     console.log(queryString);
     let urlParams = new URLSearchParams(queryString);
-    let search = urlParams.get('search')
+    let search = urlParams.get('search');
     console.log(search);
-
     let q = search;
 
     $(document).ready(function() {
