@@ -10,7 +10,9 @@
 ## Juan Pena
 
 ### Check it out here
-![searchTheUniverse](https://mtarquini19.github.io/Team-7/)
+
+[searchTheUniverse](https://mtarquini19.github.io/Team-7/)
+
 ![applicationDemo](assets/demo.gif)
 
 ### Application Requirements:
