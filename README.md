@@ -47,7 +47,7 @@
 - Visual Studio Code
 
 #### Home Page
-![homePage](assets/homepage.png)
+[homePage](assets/homepage.png)
 
 #### Earth Search Results
 ![earthSearch](assets/earthSearch.png)
