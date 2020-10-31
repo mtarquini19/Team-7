@@ -8,9 +8,7 @@ $(document).ready(function() {
 
         $background.css(
             "background-image",
-            "linear-gradient(194deg, rgba(0,0,0,0.9332107843137255) 0%, rgba(0,0,0,0.21052170868347342) 100%), url(" +
-
-
+            "radial-gradient(circle, rgba(0,0,0,0.87718837535014) 0%, rgba(0,0,0,0.8547794117647058) 100%), url(" +
             data.hdurl +
             ")"
         );
