@@ -16,7 +16,7 @@ $(document).ready(function() {
             console.log(collection.collection);
             for (let i in collection.collection.items) {
                 $("#result-container").append(
-                    '<img class="container-img" width="300" src="' +
+                    '<img onclick = "fbs_click(this)" class="container-img" width="300" src="' +
                     collection.collection.items[i].links[0].href +
                     '">'
                 );
@@ -24,3 +24,10 @@ $(document).ready(function() {
         });
     });
 })
+
+function fbs_click(TheImg) {
+    u = TheImg.src;
+    t = TheImg.getAttribute('alt');
+    window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false;
+}
