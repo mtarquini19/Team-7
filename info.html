@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info.css">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -70,19 +70,14 @@
         </nav>
     </header>
 
-    <!-- header with navbar & search field -->
-    <!-- buttons for back & main page -->
-    <!-- small link to team members -->
-    <!-- image and image information will display -->
-    <!-- display buttons to share to social media & email -->
 
+    <div class="container">
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <h3>Juan Pena <a href="https://www.linkedin.com/in/juan-pena-4457b5198/" class="fa fa-linkedin"></a>
                 </h3>
                 <img src="assets/juanimg.png" alt="juanimg">
-
             </div>
         </div>
         <div class="col-md-4">
@@ -106,132 +101,24 @@
                 <h3>Alex Fernandes <a href="http://linkedin.com/in/alex-fernandes-5850b535" class="fa fa-linkedin"></a>
                 </h3>
                 <img src="assets/aleximg.png" alt="aleximg">
-
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <h3>Fernando Nunez <a href="#" class="fa fa-linkedin"></a></h3>
                 <img class="fern" src="assets/fernandoimg.png" alt="fernandoimg">
-
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <h3>MD Islam <a href="https://www.linkedin.com/in/md-islam-5326871b6" class="fa fa-linkedin"></a></h3>
                 <img src="assets/islamimg.png" alt="islamimg">
-
             </div>
         </div>
     </div>
+</div>
 
     <script src="core.js"></script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Float four columns side by side */
-        .column {
-            float: left;
-            width: 33.3%;
-            padding: 0 10px;
-        }
-
-        /* Remove extra left and right margins, due to padding */
-        .row {
-            margin: 0 -5px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
-
-        /* Style the counter cards */
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            margin: 10px;
-            text-align: center;
-            background-color: #f1f1f1;
-            width: 31%;
-            height: 625px;
-            float: left;
-        }
-
-        /* Style all font awesome icons */
-        .fa {
-            height: 60px;
-            padding: 20px;
-            font-size: 30px;
-            width: 60px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        /* Add a hover effect if you want */
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
-
-        img {
-            width: 375px;
-            height: 450px;
-            border-radius: 10px;
-        }
-    </style>
-
-    <script>
-        $(".dropdown-trigger").dropdown({
-            hover: true
-        });
-        $(document).ready(function () {
-            // create mobile menu
-
-            $('.sidenav').sidenav();
-
-            // create dropdown
-
-            // add click event on search icon
-            $('.search-icon').on('click', function () {
-                // close mobile side menu
-                $('.sidenav').sidenav('close');
-
-                // show search nav bar
-                $('#nav-search').show();
-                // focus on the input
-                $('#search').focus();
-            });
-
-            // add click event on searchbar close icon
-            $('#nav-search .close').on('click', function () {
-                // hide search nav bar
-                $('#nav-search').hide();
-            });
-        });
-    </script>
 
 </body>
 
