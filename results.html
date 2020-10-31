@@ -28,11 +28,9 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
                 <form class="left hide-on-med-and-down" style="margin-left: 100px; width: 80%">
-                    <div class="input-field">
-                        <input id="search" type="search" required placeholder="Search for more photo">
-                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
+                    <form action="results.html" method="get" class="input-field">
+                        <input type="text" name="search" id="search" placeholder="Search for a photo...">
+                    </form>
                 </form>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="info.html">Meet Team 7</a></li>
@@ -41,12 +39,10 @@
             <!-- Mobile -->
             <ul class="sidenav" id="mobile-demo">
                 <li><a href="info.html">Meet Team 7</a></li>
-                <div class="input-field">
-                    <input id="search" type="search" required placeholder="Search for more photo">
-                    <label class="label-icon" for="search"><i
-                            class="material-icons hide-on-med-and-down ">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
+                <form action="results.html" method="get" class="input-field">
+                    <input type="text" name="search" id="search" placeholder="Search for a photo...">
+                    <input style="background-color: red;" type="submit" class="btn btn-large" value="Search" />
+                </form>
             </ul>
         </nav>
     </header>
@@ -57,7 +53,7 @@
     <!-- hover effect for each image/ video showing image information -->
     <!-- user ability to share photos via social media & email -->
 
-    <div id="result-container" class="container"></div> 
+    <div id="result-container" class="container"></div>
 
     <script src="core.js"></script>
 </body>
