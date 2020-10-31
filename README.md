@@ -31,6 +31,10 @@
 - User can share the picture or video on social media;
 - Download the picture or video to the computer.
 
+The following gif video demonstrates the application functionality:
+
+![demo](assets/demo.gif)
+
 ### Development
 
 - HTML
