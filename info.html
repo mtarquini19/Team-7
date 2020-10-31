@@ -69,159 +69,169 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h3>Juan Pena <a href="#" class="fa fa-facebook"></a></h3>
-                    <img src="assets/juanimg.png" alt="juanimg">
 
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>Michael Tarquini <a href="https://www.linkedin.com/in/michael-tarquini-72785b1ba/"
-                            class="fa fa-linkedin"></a></h3>
-                    <img src="assets/mikeimg.png" alt="mikeimg">
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>Erik Ulerio <a href="#" class="fa fa-instagram"></a></h3>
-                    <img src="assets/erikimg.png" alt="erikimg">
-                </div>
+    <!-- header with navbar & search field -->
+    <!-- buttons for back & main page -->
+    <!-- small link to team members -->
+    <!-- image and image information will display -->
+    <!-- display buttons to share to social media & email -->
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <h3>Juan Pena <a href="https://www.linkedin.com/in/juan-pena-4457b5198/" class="fa fa-linkedin"></a>
+                </h3>
+                <img src="assets/juanimg.png" alt="juanimg">
+
             </div>
         </div>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h3>Alex Fernandes <a href="#" class="fa fa-youtube"></a></h3>
-                    <img src="assets/aleximg.png" alt="aleximg">
-
-                </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>Michael Tarquini <a href="https://www.linkedin.com/in/michael-tarquini-72785b1ba/"
+                        class="fa fa-linkedin"></a></h3>
+                <img src="assets/mikeimg.png" alt="mikeimg">
             </div>
-            <div class="column">
-                <div class="card">
-                    <h3>Fernando Nunez <a href="#" class="fa fa-google"></a></h3>
-                    <img src="assets/fernandoimg.png" alt="fernandoimg">
-
-                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>Erik Ulerio <a href="https://www.linkedin.com/in/erik-ulerio-a58878b2/" class="fa fa-linkedin"></a>
+                </h3>
+                <img src="assets/erikimg.png" alt="erikimg">
             </div>
-            <div class="column">
-                <div class="card">
-                    <h3>MD Islam <a href="#" class="fa fa-pinterest"></a></h3>
-                    <img src="assets/islamimg.png" alt="islamimg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <h3>Alex Fernandes <a href="http://linkedin.com/in/alex-fernandes-5850b535" class="fa fa-linkedin"></a>
+                </h3>
+                <img src="assets/aleximg.png" alt="aleximg">
 
-                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>Fernando Nunez <a href="#" class="fa fa-linkedin"></a></h3>
+                <img class="fern" src="assets/fernandoimg.png" alt="fernandoimg">
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>MD Islam <a href="https://www.linkedin.com/in/md-islam-5326871b6" class="fa fa-linkedin"></a></h3>
+                <img src="assets/islamimg.png" alt="islamimg">
+
             </div>
         </div>
     </div>
 
     <script src="core.js"></script>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-/* CARDS INFO PAGE */
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 0 10px;
+        }
 
-* {
-	box-sizing: border-box;
-}
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-}
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-.container {
-	margin-top: 75px;
-	margin-bottom: 100px;
-}
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
 
-/* Float four columns side by side */
-.column {
-	float: left;
-	width: 33.3%;
-	padding: 0 10px;
-}
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            margin: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            width: 31%;
+            height: 625px;
+            float: left;
+        }
 
-/* Remove extra left and right margins, due to padding */
-.row {
-	margin: 0 -5px;
-}
+        /* Style all font awesome icons */
+        .fa {
+            height: 60px;
+            padding: 20px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+        }
 
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-	.column {
-		width: 100%;
-		display: block;
-		margin-bottom: 20px;
-	}
-}
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
 
-/* Style the counter cards */
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	text-align: center;
-	background-color: #f1f1f1;
-}
+        img {
+            width: 375px;
+            height: 450px;
+            border-radius: 10px;
+        }
+    </style>
 
-/* Style all font awesome icons */
-.fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 50px;
-	text-align: center;
-	text-decoration: none;
-}
+    <script>
+        $(".dropdown-trigger").dropdown({
+            hover: true
+        });
+        $(document).ready(function () {
+            // create mobile menu
 
-/* Add a hover effect if you want */
-.fa:hover {
-	opacity: 0.7;
-}
+            $('.sidenav').sidenav();
 
-.fa-linkedin {
-	background: #007bb5;
-	color: white;
-}
+            // create dropdown
 
-.fa-facebook {
-	background: #3B5998;
-	color: white;
-}
+            // add click event on search icon
+            $('.search-icon').on('click', function () {
+                // close mobile side menu
+                $('.sidenav').sidenav('close');
 
-.fa-instagram {
-	background: #125688;
-	color: white;
-}
+                // show search nav bar
+                $('#nav-search').show();
+                // focus on the input
+                $('#search').focus();
+            });
 
-.fa-youtube {
-	background: #bb0000;
-	color: white;
-}
-
-.fa-pinterest {
-	background: #cb2027;
-	color: white;
-}
-
-.fa-google {
-	background: #dd4b39;
-	color: white;
-}
-
-img {
-	width: 100%;
-	height: 100%;
-}
-</style>
+            // add click event on searchbar close icon
+            $('#nav-search .close').on('click', function () {
+                // hide search nav bar
+                $('#nav-search').hide();
+            });
+        });
+    </script>
 
 </body>
 
